@@ -1,6 +1,6 @@
-var User = require('./userModel.js');
-    Q = require('q');
-    jwt = require('jwt-simple');
+var User = require('./userModel.js')
+    Q = require('q')
+    jwt = require('jwt-simple')
     
 var findUser = Q.nbind(User.findOne, User);
 var createUser = Q.nbind(User.create, User);
